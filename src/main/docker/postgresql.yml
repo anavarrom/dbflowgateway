@@ -1,0 +1,11 @@
+version: '2'
+services:
+  dbflow10gateway-postgresql:
+    image: postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/dbFlow10Gateway/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=dbFlow10Gateway
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432

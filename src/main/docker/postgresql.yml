@@ -6,6 +6,6 @@ services:
     #     - ~/volumes/jhipster/dbFlow10Gateway/postgresql/:/var/lib/postgresql/data/
     environment:
       - POSTGRES_USER=dbFlow10Gateway
-      - POSTGRES_PASSWORD=
+      - POSTGRES_PASSWORD=dbFlow10Gateway
     ports:
-      - 5432:5432
+      - 5452:5452

@@ -28,4 +28,4 @@ import { ErrorComponent } from './layouts/error/error.component';
   declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
   bootstrap: [JhiMainComponent]
 })
-export class DbFlow10GatewayAppModule {}
+export class DbFlow10GatewayAppModule { }

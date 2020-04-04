@@ -1,0 +1,10 @@
+{
+  "dbFlow10GatewayApp": {
+    "NotificationStatus": {
+      "null": "",
+      "EMITTED": "EMITTED",
+      "RECEIVED": "RECEIVED",
+      "READ": "READ"
+    }
+  }
+}

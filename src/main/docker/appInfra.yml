@@ -1,0 +1,19 @@
+version: '2'
+services:
+  dbflowserver-postgresql:
+    extends:
+      file: postgresql2.yml
+      service: dbflowserver-postgresql
+  consul:
+    extends:
+      file: consul.yml
+      service: consul
+
+  consul-config-loader:
+    extends:
+      file: consul.yml
+      service: consul-config-loader
+  keycloak:
+    extends:
+      file: keycloak.yml
+      service: keycloak

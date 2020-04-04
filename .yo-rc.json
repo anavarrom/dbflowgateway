@@ -38,7 +38,10 @@
     "entitySuffix": "",
     "dtoSuffix": "DTO",
     "otherModules": [],
-    "blueprints": []
+    "blueprints": [],
+    "promptValues": {
+      "microservicePath": "../dbflowserver"
+    }
   },
   "git-provider": "GitHub",
   "git-company": "anavarrom",

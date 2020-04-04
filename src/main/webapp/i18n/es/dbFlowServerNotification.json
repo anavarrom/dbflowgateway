@@ -1,0 +1,33 @@
+{
+  "dbFlow10GatewayApp": {
+    "dbFlowServerNotification": {
+      "home": {
+        "title": "Notifications",
+        "createLabel": "Crear nuevo Notification",
+        "createOrEditLabel": "Crear o editar Notification",
+        "notFound": "Ningún Notifications encontrado"
+      },
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Notification {{ id }}?"
+      },
+      "detail": {
+        "title": "Notification"
+      },
+      "subject": "Subject",
+      "body": "Body",
+      "from": "From",
+      "to": "To",
+      "emittedDate": "Emitted Date",
+      "readDate": "Read Date",
+      "dueDate": "Due Date",
+      "status": "Status"
+    }
+  },
+  "dbFlowServerApp": {
+    "dbFlowServerNotification": {
+      "created": "Un nuevo Notification ha sido creado con el identificador {{ param }}",
+      "updated": "Un Notification ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Notification ha sido eliminado con el identificador {{ param }}"
+    }
+  }
+}

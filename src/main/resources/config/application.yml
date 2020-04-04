@@ -14,7 +14,6 @@
 # http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
 # ===================================================================
 
-# See http://cloud.spring.io/spring-cloud-netflix/spring-cloud-netflix.html
 zuul: # those values must be configured depending on the application specific needs
   sensitive-headers: Cookie,Set-Cookie #see https://github.com/spring-cloud/spring-cloud-netflix/issues/3126
   host:
@@ -134,7 +133,7 @@ spring:
         registration:
           oidc:
             client-id: web_app
-            client-secret: web_app
+            client-secret: 57115dc3-4a3c-497a-8727-456386a29cd9
 
 server:
   servlet:

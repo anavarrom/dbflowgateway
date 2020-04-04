@@ -1,0 +1,11 @@
+version: '2'
+services:
+  dbflowserver-postgresql:
+    image: postgres:11.6
+    # volumes:
+    #     - ~/volumes/jhipster/dbFlowServer/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=dbFlowServer
+      - POSTGRES_PASSWORD=dbFlowServer
+    ports:
+      - 5442:5432

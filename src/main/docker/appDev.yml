@@ -16,10 +16,10 @@ services:
       - JHIPSTER_SLEEP=30 # gives time for other services to boot before the application
     ports:
       - 8080:8080
-  dbflow10gateway-postgresql:
+  dbflowserver-postgresql:
     extends:
-      file: postgresql.yml
-      service: dbflow10gateway-postgresql
+      file: postgresql2.yml
+      service: dbflowserver-postgresql
   consul:
     extends:
       file: consul.yml

@@ -1,0 +1,55 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="notification">
+            <h2><span jhiTranslate="dbFlow10GatewayApp.dbFlowServerNotification.detail.title">Notification</span> {{notification.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="dbFlow10GatewayApp.dbFlowServerNotification.subject">Subject</span></dt>
+                <dd>
+                    <span>{{notification.subject}}</span>
+                </dd>
+                <dt><span jhiTranslate="dbFlow10GatewayApp.dbFlowServerNotification.body">Body</span></dt>
+                <dd>
+                    <span>{{notification.body}}</span>
+                </dd>
+                <dt><span jhiTranslate="dbFlow10GatewayApp.dbFlowServerNotification.from">From</span></dt>
+                <dd>
+                    <span>{{notification.from}}</span>
+                </dd>
+                <dt><span jhiTranslate="dbFlow10GatewayApp.dbFlowServerNotification.to">To</span></dt>
+                <dd>
+                    <span>{{notification.to}}</span>
+                </dd>
+                <dt><span jhiTranslate="dbFlow10GatewayApp.dbFlowServerNotification.emittedDate">Emitted Date</span></dt>
+                <dd>
+                    <span>{{notification.emittedDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="dbFlow10GatewayApp.dbFlowServerNotification.readDate">Read Date</span></dt>
+                <dd>
+                    <span>{{notification.readDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="dbFlow10GatewayApp.dbFlowServerNotification.dueDate">Due Date</span></dt>
+                <dd>
+                    <span>{{notification.dueDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="dbFlow10GatewayApp.dbFlowServerNotification.status">Status</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'dbFlow10GatewayApp.NotificationStatus.' + notification.status}}">{{notification.status}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/notification-my-suffix', notification.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

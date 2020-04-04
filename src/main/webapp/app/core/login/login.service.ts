@@ -9,6 +9,10 @@ export class LoginService {
   login() {
     // If you have configured multiple OIDC providers, then, you can update this URL to /login.
     // It will show a Spring Security generated login page with links to configured OIDC providers.
+
+    const url1 = `${location.origin}`;
+    const url2 = `${this.location.prepareExternalUrl('oauth2/authorization/oidc')}`;
+    const url = `${location.origin}${this.location.prepareExternalUrl('oauth2/authorization/oidc')}`;
     location.href = `${location.origin}${this.location.prepareExternalUrl('oauth2/authorization/oidc')}`;
   }
 
